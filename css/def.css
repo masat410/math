@@ -7,6 +7,7 @@
     --middle:#8a918f;
     --white: #fff8fc;
     --black-second:#008f62;
+    --white-second:#ffd9ef;
 }
 /*共通部分*/
 html{
@@ -62,6 +63,7 @@ image{
 .page-header{
     display: flex;
     justify-content: space-between;
+    background-color: var(--white-second);
 }
 .logoo{
     display: flex;
