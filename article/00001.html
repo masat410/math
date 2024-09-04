@@ -18,14 +18,17 @@
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"><!-- google fontsの指定(3つ) -->
         <link rel="stylesheet" href="../css/def.css">
 
+        <link rel="stylesheet" href="articlecss/00001.css">
     <!-- タブに表示されるアイコン -->
-        <link rel="icon" type="image/png" href="/images/logo.png">
-    </head>
+        <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <!--mathJaxの設定-->    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>   </head>
 
     <body>
         <header class="page-header wrapper">
             <div class="logoo">
-                <a href="notfound.html"><img src="/images/logo.png" alt="サイトのロゴ" class="logo"></a>
+                <a href="notfound.html"><img src="../images/logo.png" alt="サイトのロゴ" class="logo"></a>
                 <a href="notfound.html"><span class="yusei-magic-regular">数学の裏技</span></a>
             </div>
             <nav>
@@ -36,6 +39,46 @@
                 </ul>
             </nav>
         </header>
+
+        <div class="main-content wrapper">
+            <article>
+                <header class="info">
+                    <h2 class="title">クラメルの公式の紹介</h2>
+                    <p class="date">9/1 <span>2024</span></p>
+                    <p class="sub-title">-連立(一次)方程式を簡単に解ける公式-</p>
+                </header>
+
+                <div class="article">
+                    　この公式は、n元連立一次方程式の解を計算できる公式です。この公式は、文字が多い(式が多い)ほど計算量が多くなりますが、
+                    中学二年生で習う二元連立方程式では暗算や手計算でも短時間で解を求めることができます。そんなクラメルの公式を二元連立一次
+                    方程式用にしてわかりやすくするとこのようになります。
+                    
+                    <div style="max-width: 50%;">
+                    <div id="a1-1">
+                        <div>
+                            \begin{equation}
+                               \begin{cases}
+                                    Ax+By=C\\
+                                   Dx+Ey=F
+                               \end{cases}
+                            \end{equation}
+                        </div>
+                        <div><div>$$Z=AE-BD$$</div><div>$$(Z\ne0)$$</div></div>
+                    </div>
+
+                    <div style="display: flex;justify-content: space-around;">
+                        <div>$$x = \frac{EC - BF}{Z}$$</div><div>$$y = \frac{AF-DC}{Z}$$</div>
+                    </div>
+                    </div>
+
+                    一見難しかったり、おぼられなさそうに見えますが、使っていくうちに覚えると思います<small>(たぶん)</small>。クラメルの
+                    公式と学校で習う加減法を比べてみるとこんなかんじになります。
+                    
+                </div>
+            </article>
+        </div>
+
+
 
 
         
