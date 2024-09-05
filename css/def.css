@@ -8,6 +8,7 @@
     --white: #fff8fc;
     --black-second:#008f62;
     --white-second:#ffd9ef;
+    --susiki-color:#F9FFF8;
 }
 /*共通部分*/
 html{
@@ -33,6 +34,14 @@ footer{
     margin: 0 auto;
     padding: 0 4%;
 }
+
+.susiki{
+    background-color: var(--susiki-color);
+    border-radius: 20px;
+}
+
+
+
 /*ページ上部のナヴィゲーション*/
 .logo{
     width: 70px;
@@ -123,4 +132,7 @@ footer p{
 .title,.sub-title{
     margin-left: 100px;
     color: var(--black);
+}
+.sub-title{
+    /*border-top: 1px var(--white-second) solid;*/
 }
