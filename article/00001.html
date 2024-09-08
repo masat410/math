@@ -71,12 +71,13 @@
                     </div>
                     </div>
 
-                    一見難しかったり、おぼられなさそうに見えますが、使っていくうちに覚えると思います<small>(たぶん)</small>。クラメルの
+                    一見難しかったり、覚えられなさそうに見えますが、使っていくうちに覚えると思います<small>(たぶん)</small>。クラメルの
                     公式と学校で習う加減法を比べてみるとこんなかんじになります。
                     
-                    <div class="susiki">
-                        <div cr style="display: flex;">
+                    <div>
+                        <div cr style="display: flex;" class="susiki">
                             <div 例題>
+                                クラメルの公式
                                 \begin{equation}
                                 \begin{cases}
                                 3x+2y=16\\-2x+y=1
@@ -87,10 +88,23 @@
                             <div xを計算>\begin{equation}x=\frac{1\times16-2\times1}{7}  \\ = \frac{14}{7} \\ =2\end{equation}</div>
                             <div yを計算>\begin{equation}y=\frac{3\times1-(-2)\times16}{7}  \\ = \frac{35}{7}\\ =5\end{equation}</div>
                         </div>
-                        <div ga style="display: flex;">
-                            
+                        <div style="margin-top: 20px;"></div>
+                        <div ga style="display: flex;" class="susiki">
+                            <div 例題>加減法\begin{equation}\begin{cases}3x+2y=16\dots➀\\-2x+y=1\dots➁\end{cases}\end{equation}</div>
+                            <div yの計巣をそろえる>\begin{equation}➁\times2\\-4x+2y=2\dots➁'\end{equation}</div>
+                            <div 引く>\begin{equation}　　　3x+2y=16\\-)-4x+2y=2\\---------\\　　　7x　　=14\end{equation}</div>
+                            <div xを計算>\begin{equation}x=2\\x=2を➀に代入\\3\times2+2y=16\\2y=10\\y=5\end{equation}</div>
                         </div>
                     </div>
+
+                    しくみは加減法のほうが簡単だがクラメルの公式は解きやすかった。
+                    テストなどで答えを確かめるときやxかyの片方を素早く求めたいときに使えそう。
+                    そんなクラメルの公式ですが、デメリットがあり、連立方程式の文字数が多くなると
+                    計算量も膨大になるという点です。ただし中学や高校の範囲の二元や三元の連立方程式
+                    くらいなら手計算でも十分にできます。何十や何百元にもなる連立方程式になるとクラメルの公式は
+                    コンピューターでも使うのが難しくなります。手計算だと五～六元になると限界です。
+                    (そんなに大きな連立方程式ならガウス消去法とかを使うと思います。)
+                    今回はさらっと簡単に仕組みを解説します。
                 </div>
             </article>
         </div>
@@ -100,7 +114,7 @@
 
         
         <footer>
-            <div class="wrapper"><p><small>&copy; 2024 masat410</small></p></div>
+            <div class="wrapper"><p><small>2024 masat410</small></p></div>
         </footer>
     </body>
 </html>
