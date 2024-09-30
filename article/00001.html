@@ -112,15 +112,27 @@
 
                     <div class="susiki">\begin{equation}\begin{pmatrix}3&2\\-2&1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}16\\1\end{pmatrix}\\(Ax=b)\end{equation}</div>
 
-                    (数などを縦と横で並べて"()"で囲むと行列というものになる)
-                    さっき作った行列を文字に置き換えると下の(Ax=b)になる。
+                    (数などを縦と横で並べて"()"で囲むと行列というものになる)<br>
+                    さっき作った行列を文字に置き換えて(Ax=b)と表現することもできる。
 
                     <br>
                     <br>
 
-                    この先の説明をする前に、この連立方程式の解が一つに定まるかを確認する必要がある。それがここの部分です。
-                    <div class="susiki">\begin{equation}Z=AE-BD\\Z\ne0\end{equation}</div>
-                    
+                    この先の説明をする前に、この連立方程式の解が一つに定まるかを確認する必要があります。それがここの部分です。
+                    <div class="susiki">\begin{equation}Z=AE-BD\\→Z\ne0\end{equation}</div>
+                    一時連立方程式の解が1つに定まらない場合は、2つの文字の係数の比が2つの式で同じになっている場合です。
+                    これはグラフとみると理解しやすく、普通の連立方程式はこのように2つの一次式のグラフが交わるところの座標が解になります。
+                    <iframe src="https://www.desmos.com/calculator/cdl8ttes84?embed" width="250" height="250" style="border: 1px solid #ccc" frameborder=0></iframe>
+                    ですが下のようにxとyの係数の比が同じだとこのように2つのグラフが重なって解が1つに定まりません。
+                    <div class="susiki">\begin{equation}\begin{cases}x+2y=3\\2x+4y=6\end{cases} \end{equation}</div>
+                    <iframe src="https://www.desmos.com/calculator/gfz1qnkayg?embed" width="250" height="250" style="border: 1px solid #ccc" frameborder=0></iframe>
+                    さっきは○x+△y=□の○と△に加え□の比も同じ(○:△:□=1:2:3)でしたが、□の部分は無視すると、
+                    <div class="susiki">\begin{equation}\begin{cases}x+2y=3\\2x+4y=3\end{cases} \end{equation}</div>
+                    <iframe src="https://www.desmos.com/calculator/fehdlwz8kr?embed" width="250" height="250" style="border: 1px solid #ccc" frameborder=0></iframe>
+                    このように平行になり交わらなくなります。つまり解なし。
+                    a:b=c:dのときad=bcなのでad-bc=0の場合は解くことができません。
+                    <br><br>
+                    実際は係数行列の行列式を求める手順で正則行列であるかを判断している。
                 </div>
             </article>
         </div>
